@@ -1,0 +1,29 @@
+FUNCTION dot_product(v1,v2 : ARRAY_OF ) : INTEGER
+VAR
+ i : INTEGER
+ dot2 := INTEGER
+BEGIN
+ dot2 := 0
+ if (v1.length<>v2.length) THEN
+    dot2:=nan
+    ELSE 
+    FOR i FROM 0 TO v1.length-1 STEP 1  DO
+    dot2 := + v1[i]*v2[i]
+ END_FOR
+ END_IF
+ return dot
+END
+
+
+ALGORITHM dot product
+VAR
+ v1,v2 : ARRAY_OF INTEGER [100]
+ dot ; INTEGER
+BEGIN
+ dot := dot_product(v1,v2,)
+ if (dot = 0) THEN
+ write ("les vectors sont orthogonal")
+ ELSE
+ write ("les vectors ne sont pas orthogonal")
+ END_IF
+END 
